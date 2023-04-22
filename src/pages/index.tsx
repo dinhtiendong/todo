@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Radio, RadioChangeEvent, Result } from "antd";
 import ReactPaginate from "react-paginate";
 import Pagination from "../pages/Pagination";
+import store from "../pages/store/store";
 import {
   addTodo,
   deleteTodo,
