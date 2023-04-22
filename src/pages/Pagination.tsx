@@ -9,7 +9,7 @@ function Pagination({
   currentPage: number;
   totalPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-  handlePageChange: Function;
+  onChangePage: Function;
 }) {
   // const [index, setIndex] = useState(currentPage);
 
