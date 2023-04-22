@@ -11,7 +11,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { BiPlusMedical } from "react-icons/bi";
 import { BsArrowDownSquare, BsArrowUpSquare } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { Radio, Result } from "antd";
+import { Radio, RadioChangeEvent, Result } from "antd";
 import ReactPaginate from "react-paginate";
 import Pagination from "../pages/Pagination";
 import {
@@ -137,7 +137,7 @@ export default function Home() {
     setPriority(e.target.value);
   };
 
-  const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const radioHandler = (event: RadioChangeEvent) => {
     setCheckValue(event.target.value);
   };
   const handleChangePriority = (
