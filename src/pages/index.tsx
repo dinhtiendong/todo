@@ -14,7 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Radio, RadioChangeEvent, Result } from "antd";
 import ReactPaginate from "react-paginate";
 import Pagination from "../pages/Pagination";
-import store from "../pages/store/store";
 import {
   addTodo,
   deleteTodo,
@@ -23,12 +22,11 @@ import {
   editNumTodo,
   handleBlurRedux,
   handleChangeOption,
-} from "./store/todoSlide";
+} from "../store/todoSlide";
 import { TodoProp } from "./interfaces";
-import { RootState } from "./store/store";
+import { RootState } from "../store/store";
 import { v4 } from "uuid";
 import ReactDOM from "react-dom";
-import { current } from "immer";
 
 
 export default function Home() {

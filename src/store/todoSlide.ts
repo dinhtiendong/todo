@@ -1,6 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { TodoProp } from "../interfaces";
-import store from "./store"
 
 
 
